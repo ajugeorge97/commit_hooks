@@ -200,8 +200,17 @@ def bump_version():
             'f"' + bump_toml_dict["tool"]["bumpversion"]["message"] + '"'
         )
 
+        version_update_files = [
+            _item["filename"] for _item in ["tool"]["bumpversion"]["files"]
+        ]
+        version_update_files_str = (
+            " ".join(version_update_files)
+            if len(version_update_files) > 1
+            else version_update_files[0]
+        )
+
         _cmd = (
-            "git add pyproject.toml uv.lock && "
+            f"git add uv.lock {version_update_files_str} && "
             f'git commit --no-verify -m "{commit_message}"'
         )
         env = os.environ.copy()  # or without a copy if no other variables are needed

@@ -1,8 +1,18 @@
 ## Unreleased
 
+### Documentation
+
+- added alias for bump-hook (3e9972c)
+
+### New Features
+
+- add committing of multiple version files (42139de)
+
+## v0.2.1 (2026-01-28)
+
 ### Bug Fixes
 
-- added ascii to show-bump cmd (a203554)
+- added ascii to show-bump cmd (93a5e23)
 - use env argument of subprocess for windows compatibility (cc70d0e)
 - also respect existing skip-config in pre-push hook (87e8a02)
 
