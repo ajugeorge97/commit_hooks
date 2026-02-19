@@ -1,12 +1,16 @@
 ## Unreleased
 
+### Bug Fixes
+
+- added missing dict object (3e1956b)
+
 ### Documentation
 
 - added alias for bump-hook (3e9972c)
 
 ### New Features
 
-- add committing of multiple version files (42139de)
+- add committing of multiple version files (044520d)
 
 ## v0.2.1 (2026-01-28)
 

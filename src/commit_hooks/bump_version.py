@@ -201,7 +201,8 @@ def bump_version():
         )
 
         version_update_files = [
-            _item["filename"] for _item in ["tool"]["bumpversion"]["files"]
+            _item["filename"]
+            for _item in bump_toml_dict["tool"]["bumpversion"]["files"]
         ]
         version_update_files_str = (
             " ".join(version_update_files)
