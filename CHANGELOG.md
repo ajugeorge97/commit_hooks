@@ -2,7 +2,8 @@
 
 ### Other changes
 
-- updated pre-commit hooks (a316332)
+- added renovate.json (9ba8d60)
+- updated pre-commit hooks (bdf73d6)
 
 ## v0.2.3 (2026-03-18)
 
