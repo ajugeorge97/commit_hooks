@@ -24,6 +24,7 @@
         "*"
       ],
       "pre-commit": {
+        "enabled": true,
         "managerFilePatterns": ["/^.*pre-commit.*\\.yaml$/"]
       }
     }
