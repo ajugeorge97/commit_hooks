@@ -34,7 +34,7 @@
       "name": "Updating release version file",
       "filePatterns": [".release-version"],
       "bumpType": "minor",
-      "matchStrings": ["version:\\s(?<version>[^\\s]+)"]
+      "matchStrings": ["version\\s=\\s(?<version>[^\\s]+)"]
     }
   ]
 }
