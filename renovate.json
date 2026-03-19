@@ -32,7 +32,7 @@
   "bumpVersions": [
     {
       "name": "Updating release version file",
-      "filePatterns": [".release-version"],
+      "filePatterns": ["pyproject.toml"],
       "bumpType": "minor",
       "matchStrings": ["version\\s=\\s(?<version>[^\\s]+)"]
     }
