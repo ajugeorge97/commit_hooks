@@ -2,6 +2,10 @@
 
 This repo provides commit hooks for the troi-lab working group.
 
+## Base Hooks [stage: pre-commit]
+
+Base hooks are wrapped in the `troi_lab_base_hooks` hook. The underlying config-file is located at [src/commit_hooks/templates/config/pre-commit-cfg.yaml](src/commit_hooks/templates/config/pre-commit-cfg.yaml).
+
 
 ## Check Commit-Message [stage: commit-msg]
 
@@ -61,3 +65,23 @@ BUMP=patch pre-commit run --hook-stage post-commit bump-version
 ```
 
 Hook `bump-version-tag-pusher` is a pre-push hook that will push the tag, if HEAD was tagged.
+
+## Using all hooks
+
+```yaml
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+  - post-commit
+  - pre-push
+
+repos:
+  - repo: https://github.com/uker-troi-lab/commit_hooks
+    rev: v0.2.3
+    hooks:
+      - id: troi_lab_base_hooks
+      - id: check-commit-msg
+      - id: recreate-changelog
+      - id: bump-version
+      - id: bump-version-tag-pusher
+```

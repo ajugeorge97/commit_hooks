@@ -1,5 +1,24 @@
 ## Unreleased
 
+### Other changes
+
+- added renovate.json (9ba8d60)
+- updated pre-commit hooks (bdf73d6)
+
+## v0.2.3 (2026-03-18)
+
+### New Features
+
+- create dependabot.yml (fc0d535)
+
+### Other changes
+
+- bump version: 0.2.2 -> 0.2.3 (b64db53)
+- updated pre-commit versions (9fd0a8e)
+- added license file (21d55b0)
+
+## v0.2.2 (2026-02-19)
+
 ### Bug Fixes
 
 - added missing dict object (736a4fa)
@@ -14,7 +33,7 @@
 
 ### Other changes
 
-- bump version: 0.2.1 -> 0.2.2 (b50cdee)
+- bump version: 0.2.1 -> 0.2.2 (af00a2e)
 
 ## v0.2.1 (2026-01-28)
 

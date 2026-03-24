@@ -26,5 +26,6 @@ __pycache__
 
 !uv.lock
 !pyproject.toml
+!renovate.json
 
 dist/

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "assignees": [
+    "kapsnelz",
+    "kapsner",
+    "schreihs",
+    "hann-sch",
+    "georgeau",
+    "ajugeorge97"
+  ],
+  "extends": [
+    ":preserveSemverRanges",
+    "group:all",
+    "config:recommended"
+  ],
+  "groupName": "all dependencies",
+  "separateMajorMinor": true,
+  "groupSlug": "all",
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "matchPackageNames": [
+        "*"
+      ]
+    }
+  ],
+  "pre-commit": {
+    "enabled": true,
+    "managerFilePatterns": ["/^.*pre-commit.*\\.yaml$/"]
+  },
+  "bumpVersions": [
+    {
+      "name": "Updating release version file",
+      "filePatterns": ["pyproject.toml"],
+      "bumpType": "minor",
+      "matchStrings": ["version\\s=\\s(?<version>[^\\s]+)"]
+    }
+  ]
+}
